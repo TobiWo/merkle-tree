@@ -1,5 +1,5 @@
 # Simple API to plot a Merkle Tree
-This code can be used to create a plot of an merkle tree. It's mainly for education-purposes regarding a Merkle-Tree on the Bitcoin-Blockchain.
+This code can be used to create a plot of an merkle tree. It's mainly for education purposes concerning the Merkle-Tree on the Bitcoin-Blockchain.
 Therefore, feel free to download the code and plot your own Merkle-Trees.
 
 ## Usage
