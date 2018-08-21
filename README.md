@@ -6,6 +6,9 @@ Therefore, feel free to download the code and plot your own Merkle-Trees.
 * see example_usage.py
 * see Jupyter-Notebook merkle_tree_demo.ipynb
 
+### Note
+The plot is displayed in the ete tree browser. Therefore, it cannot be displayed within the jupyter-notebook.
+
 ## etetoolkit
 The API is based on the etetoolkit for phylogenetic trees.
 
