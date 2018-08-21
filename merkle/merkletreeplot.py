@@ -70,7 +70,6 @@ class MerkleTreePlot():
             change_node_style: NodeStyle = self.__get_general_nodestyle(color)
             node_to_find.set_style(change_node_style)    
             node_to_find = node_to_find.up
-        self.is_change = True
 
     def mark_verification_nodes(self, leaf_number: int, color = "purple"):
         """Function which highlights all nodes which are necessary to find a specific leaf in the tree.
@@ -94,7 +93,6 @@ class MerkleTreePlot():
             else:
                 node_to_find.set_style(verification_node_style)
                 break
-        self.is_change = True
 
 
     def __find_node(self, leaf_number: int) -> TreeNode:
@@ -110,6 +108,7 @@ class MerkleTreePlot():
         leaf_to_search: str = '{}_{}'.format(self.merkle_tree.leave_name, leaf_number)
         try:
             node_to_find: TreeNode = self.merkle_tree_plot.search_nodes(name=leaf_to_search)[0]
+            self.is_change = True
             return node_to_find
         except IndexError as ie:
             print(ie)
